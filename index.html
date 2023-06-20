@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Padronização de Nomenclatura de Remédios</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="container">
+    <header class="box fade-in">
+      <h1>Sistema de Padronização de Nomenclatura de Remédios</h1>
+    </header>
+
+    <section class="box fade-in delay-1">
+      <h2>O Desafio</h2>
+      <p>Falta de padronização na nomenclatura de mais de 66.000 e impacta em diversos processos no ecossistema de saúde.</p>
+    </section>
+
+    <section class="box fade-in delay-2">
+      <h2>Solução</h2>
+      <p>Análise dos bancos de dados existentes, que serão extraídos por um script de web scraping feito em python, possivelmente uma vez por dia, de forma a manter os dados atualizados. Esses dados serão então normalizados utilizando regex e IA, de forma que uma nomenclatura padrão seja usada e os resultados apresentados conforme necessidade no meio preferido pela empresa (pdf, txt, ou dashboard no Power BI)</p>
+    </section>
+
+    <section class="box fade-in delay-3">
+      <h2>Entre em Contato</h2>
+      <br>
+      <form action="process.php" method="POST" id="contactForm">
+        <div class="input-box">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Nome:</label>
+        </div>
+        <div class="input-box">
+          <input type="email" id="email" name="email" required>
+          <label for="email">E-mail:</label>
+        </div>
+        <div class="input-box">
+          <textarea id="message" name="message" required></textarea>
+          <label for="message">Mensagem:</label>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer class="box fade-in delay-4">
+      <p>&copy; 2023 Sanofi. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
